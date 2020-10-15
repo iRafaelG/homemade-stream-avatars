@@ -85,17 +85,17 @@ function fireworks(url) {
     const heightDisplay = window.innerHeight;
 
     for (let index = 0; index < 50; index++) {
-            // mini display
-    const widthDisplayRandom = ((Math.random() - 1 + Math.random())) * widthDisplay;
-    const heightDisplayRandom = ((Math.random() - 1 + Math.random())) * heightDisplay;
+    // mini display
+    const widthDisplayRandom = randomNumbers((Math.random() - 1), Math.random(), widthDisplay);
+    const heightDisplayRandom = randomNumbers((Math.random() - 1), Math.random(), heightDisplay);
 
     const firework = document.createElement('firework');
 
     const widthFirework = Math.floor(Math.random() * 40) + 16;
     const heightFirework = widthFirework;
 
-    const destinationXFirework = (Math.random() - 0.5) * 700;
-    const destinationYFirework = (Math.random() - 0.5) * 700;
+    const destinationXFirework = randomNumbers(Math.random(), -0.5, 800);
+    const destinationYFirework = randomNumbers(Math.random(), -0.5, 800);  
     const rotation = (Math.random() * 500) + 720;
     const delay = (Math.random() * 500);
 
@@ -122,7 +122,7 @@ function fireworks(url) {
     });
 
     animation.onfinish = (e) => {
-        e.srcElement.effect.target.remove();
+        e.target.effect.target.remove();
     }
 
     document.body.appendChild(firework);
@@ -131,5 +131,5 @@ function fireworks(url) {
 }
 
 function randomNumbers(...args) {
-    console.log(args);
+    return (args[0] + args[1]) * args[2];
 }

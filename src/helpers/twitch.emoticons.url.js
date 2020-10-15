@@ -13,4 +13,4 @@ const twitchEmojiURL = (emotes) => {
     })
 }
 
-module.exports = twitchEmojiURL
+module.exports = twitchEmojiURL;

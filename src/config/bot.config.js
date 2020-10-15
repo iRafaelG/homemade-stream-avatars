@@ -7,10 +7,10 @@ module.exports = {
         debug: false
     },
     identity: {
-        username: 'irafaelg',
+        username: 'your-name',
         password: process.env.OAUTH_TOKEN
     },
     channels: [
-        'irafaelg'
+        'your-channel'
     ]
 }

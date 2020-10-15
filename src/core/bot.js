@@ -36,9 +36,7 @@ bot.on("part", (channel, username, self) => {
 });
 
 bot.on("message", (channel, userstate, message, self) => {
-    // Don't listen to my own messages..
-    //if (self) return;
-    //console.log(userstate);
+    //if (self) return;    
     childProcess.send({ "emotes": userstate.emotes });
 });
 

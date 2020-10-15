@@ -19,7 +19,7 @@ process.on("message", async (event) => {
     if (socket && event.left) socket.emit('deleteUser', event.left);
     if (socket && event.emotes) {
         let urls = await twitchEmojiURL(event.emotes);
-        socket.emit('emotes', urls)
+        socket.emit('emotes', urls);
     }
 });
 

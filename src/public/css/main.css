@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatars {
+    left: 0;
+    top: 90%;
+    display: flex;
+    height: 95px;
+    width: 1220px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: auto;
+    height: 5rem;
+    display: flex;
+    margin: 0 0.3rem;
+    padding: 0 0.2rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.username {
+    color: #6FCF97;
+    font-size: x-large;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.avatarwrapper {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.useravatar-elephant {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: relative;
+    background-image: url('../assets/elephant.svg');
+    animation-name: rotate;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.useravatar-dog {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: relative;
+    background-image: url('../assets/dog.svg');
+    animation-name: rotate;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.useravatar-gecko-reptile {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: relative;
+    background-image: url('../assets/gecko-reptile.svg');
+    animation-name: rotate;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.useravatar-gull-bird {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: relative;
+    background-image: url('../assets/gull-bird.svg');
+    animation-name: rotate;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.useravatar-kangaroo {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: relative;
+    background-image: url('../assets/kangaroo.svg');
+    animation-name: rotate;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.useravatar-rabbit {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: relative;
+    background-image: url('../assets/rabbit.svg');
+    animation-name: rotate;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.useravatar-seahorse {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: relative;
+    background-image: url('../assets/seahorse.svg');
+    animation-name: rotate;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.useravatar-fly {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: relative;
+    background-image: url('../assets/fly.svg');
+    animation-name: rotate;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.useravatar-deer {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: relative;
+    background-image: url('../assets/deer.svg');
+    animation-name: rotate;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.useravatar-rat {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: relative;
+    background-image: url('../assets/rat.svg');
+    animation-name: rotate;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+     }
+}
